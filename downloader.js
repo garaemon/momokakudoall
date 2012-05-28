@@ -13,16 +13,19 @@ function amebloBaseURL(name) {
 
 function main() {
   //http://ameblo.jp/ariyasu-sd/imagelist-200902.html
-  $.get("http://ameblo.jp/ariyasu-sd/imagelist-200902.html",
-        {
-        },
-        function(data) {
-          alert(data);
-        });
+  $(function() {
+    $.ajax({
+      url: "http://ameblo.jp/ariyasu-sd/imagelist-200902.html",
+      error: function(e) {
+        alert("cannot access!" + JSON.stringify(e));
+      },
+      success: function(data) {
+        alert("hogehoge")
+      }
+    });
+  });
 };
 
 $(function() {
-  main();
+  setTimeout(main, 1000);
 });
-
-
