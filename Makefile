@@ -46,19 +46,19 @@ stardust: builds/downloader_stardust_reni.js builds/downloader_stardust_kanako.j
 
 builds/downloader_stardust_reni.js: downloader_stardust.js
 	mkdir -p builds
-	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2708&cID=1%g' $^ > $@
+	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2708\&cID=1%g' $^ > $@
 builds/downloader_stardust_kanako.js: downloader_stardust.js
 	mkdir -p builds
-	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2707&cID=2%g' $^ > $@
+	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2707\&cID=2%g' $^ > $@
 builds/downloader_stardust_shiori.js: downloader_stardust.js
 	mkdir -p builds
-	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2706&cID=3%g' $^ > $@
+	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2706\&cID=3%g' $^ > $@
 builds/downloader_stardust_arin.js: downloader_stardust.js
 	mkdir -p builds
-	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2709&cID=6%g' $^ > $@
+	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2709\&cID=6%g' $^ > $@
 builds/downloader_stardust_momoka.js: downloader_stardust.js
 	mkdir -p builds
-	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2705&cID=11%g' $^ > $@
+	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2705\&cID=11%g' $^ > $@
 builds/downloader_stardust_akari.js: downloader_stardust.js
 	mkdir -p builds
-	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2699&cID=5%g' $^ > $@
+	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2699\&cID=5%g' $^ > $@

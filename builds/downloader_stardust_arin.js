@@ -1,4 +1,4 @@
-var START_PAGE = "http://star-studio.jp/momoclo/index.php?ID=2709__STARDUST_LAST_LINKcID=6";
+var START_PAGE = "http://star-studio.jp/momoclo/index.php?ID=2709&cID=6";
 var PREFIX_URL = "http://star-studio.jp/momoclo/";
 var HOST = "http://star-studio.jp/";
 var COUNTER = 0;
