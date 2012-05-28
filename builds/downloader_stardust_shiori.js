@@ -1,5 +1,3 @@
-(function(){var s=document.createElement("script");s.charset="UTF-8";s.src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js";document.body.appendChild(s)})();
-
 var START_PAGE = "http://star-studio.jp/momoclo/index.php?ID=2706__STARDUST_LAST_LINKcID=3";
 var PREFIX_URL = "http://star-studio.jp/momoclo/";
 var HOST = "http://star-studio.jp/";
@@ -73,6 +71,9 @@ function main() {
   getFileLoop(START_PAGE);
 };
 
-$(function() {
-  main();
-});
+setTimeout(function() {
+  jQuery(function() {
+    main();
+  });
+}, 5000);
+

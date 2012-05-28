@@ -71,6 +71,9 @@ function main() {
   getFileLoop(START_PAGE);
 };
 
-$(function() {
-  main();
-});
+setTimeout(function() {
+  jQuery(function() {
+    main();
+  });
+}, 5000);
+
