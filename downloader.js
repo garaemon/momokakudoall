@@ -20,12 +20,12 @@ function main() {
         alert("cannot access!" + JSON.stringify(e));
       },
       success: function(data) {
-        alert("hogehoge")
+        alert("hogehoge");
       }
     });
   });
 };
 
 $(function() {
-  setTimeout(main, 1000);
+  main();
 });
