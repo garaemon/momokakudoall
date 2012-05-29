@@ -1,6 +1,6 @@
 all: ameblo gree stardust
 
-ameblo: builds/downloader_ameblo_reni.js builds/downloader_ameblo_kanako.js builds/downloader_ameblo_shiori.js builds/downloader_ameblo_arin.js builds/downloader_ameblo_momoka.js builds/downloader_ameblo_akari.js
+ameblo: builds/downloader_ameblo_reni.js builds/downloader_ameblo_kanako.js builds/downloader_ameblo_shiori.js builds/downloader_ameblo_ayaka.js builds/downloader_ameblo_momoka.js builds/downloader_ameblo_akari.js
 
 builds/downloader_ameblo_reni.js: downloader_ameblo.js
 	mkdir -p builds
@@ -11,7 +11,7 @@ builds/downloader_ameblo_kanako.js: downloader_ameblo.js
 builds/downloader_ameblo_shiori.js: downloader_ameblo.js
 	mkdir -p builds
 	sed 's/__AMEBLO_ACCOUNT/tamai-sd/g' $^ > $@
-builds/downloader_ameblo_arin.js: downloader_ameblo.js
+builds/downloader_ameblo_ayaka.js: downloader_ameblo.js
 	mkdir -p builds
 	sed 's/__AMEBLO_ACCOUNT/sasaki-sd/g' $^ > $@
 builds/downloader_ameblo_momoka.js: downloader_ameblo.js
@@ -21,7 +21,7 @@ builds/downloader_ameblo_akari.js: downloader_ameblo.js
 	mkdir -p builds
 	sed 's/__AMEBLO_ACCOUNT/hayami-sd/g' $^ > $@
 
-gree: builds/downloader_gree_reni.js builds/downloader_gree_kanako.js builds/downloader_gree_shiori.js builds/downloader_gree_arin.js builds/downloader_gree_momoka.js builds/downloader_gree_akari.js
+gree: builds/downloader_gree_reni.js builds/downloader_gree_kanako.js builds/downloader_gree_shiori.js builds/downloader_gree_ayaka.js builds/downloader_gree_momoka.js builds/downloader_gree_akari.js
 
 builds/downloader_gree_reni.js: downloader_gree.js
 	mkdir -p builds
@@ -32,7 +32,7 @@ builds/downloader_gree_kanako.js: downloader_gree.js
 builds/downloader_gree_shiori.js: downloader_gree.js
 	mkdir -p builds
 	sed 's%__GREE_LAST_LINK%http://gree.jp/tamai_siori/blog/entry/545718091%g' $^ > $@
-builds/downloader_gree_arin.js: downloader_gree.js
+builds/downloader_gree_ayaka.js: downloader_gree.js
 	mkdir -p builds
 	sed 's%__GREE_LAST_LINK%http://gree.jp/sasaki_ayaka/blog/entry/545726338%g' $^ > $@
 builds/downloader_gree_momoka.js: downloader_gree.js
@@ -42,7 +42,7 @@ builds/downloader_gree_akari.js: downloader_gree.js
 	mkdir -p builds
 	sed 's%__GREE_LAST_LINK%http://gree.jp/hayami_akari/blog/entry/545700022%g' $^ > $@
 
-stardust: builds/downloader_stardust_reni.js builds/downloader_stardust_kanako.js builds/downloader_stardust_shiori.js builds/downloader_stardust_arin.js builds/downloader_stardust_momoka.js builds/downloader_stardust_akari.js
+stardust: builds/downloader_stardust_reni.js builds/downloader_stardust_kanako.js builds/downloader_stardust_shiori.js builds/downloader_stardust_ayaka.js builds/downloader_stardust_momoka.js builds/downloader_stardust_akari.js
 
 builds/downloader_stardust_reni.js: downloader_stardust.js
 	mkdir -p builds
@@ -53,7 +53,7 @@ builds/downloader_stardust_kanako.js: downloader_stardust.js
 builds/downloader_stardust_shiori.js: downloader_stardust.js
 	mkdir -p builds
 	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2706\&cID=3%g' $^ > $@
-builds/downloader_stardust_arin.js: downloader_stardust.js
+builds/downloader_stardust_ayaka.js: downloader_stardust.js
 	mkdir -p builds
 	sed 's%__STARDUST_LAST_LINK%http://star-studio.jp/momoclo/index.php?ID=2709\&cID=6%g' $^ > $@
 builds/downloader_stardust_momoka.js: downloader_stardust.js
